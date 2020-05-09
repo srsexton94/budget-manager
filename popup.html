@@ -4,15 +4,23 @@
     <title>Budget Manager</title>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="popup.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="popup_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Budget Manager</h1>
-    <h2>Total Spending: <span id="total">0</span></h2>
-    <h2>Limit: <span id="limit"></span></h2>
-    <label>Enter Amount
-      <input type="number" id="amount"/>
-    </label>
-    <input type="submit" id="spendAmount" value="Spend">
+    <main>
+      <h1>Budget Tracker</h1>
+      <img src="images/calc_128.png" alt="Budget Tracker Logo, calculator">
+      <section>
+        <p>Total Spending: <span id="total">0</span></p>
+        <p>Limit: <span id="limit"></span></p>
+      </section>
+      <fieldset class="amount-field">
+        <label>Add to total
+          <input type="number" id="amount"/>
+        </label>
+        <input type="submit" id="spendAmount" value="Spend" class="btn btn-success btn-sm">
+      </fieldset>
+    </main>
   </body>
 </html>
