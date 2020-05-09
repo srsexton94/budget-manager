@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Cheeto in Chief",
+  "version": "1.0",
+  "description": "A cathartic update to your presidential news: relacing references to Donold Trump with 'Cheeto in Chief'",
+  "icons": {
+    "16": "images/cheeto_16.png",
+    "32": "images/cheeto_32.png",
+    "48": "images/cheeto_48.png",
+    "128": "images/cheeto_128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/cheeto_16.png",
+    "default_popup": "popup.html"
+  }
+}
