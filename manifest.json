@@ -2,11 +2,15 @@
   "manifest_version": 2,
   "name": "Budget Manager",
   "version": "1.0",
-  "description": "Help to track your spending and alert you when you've reached your limit!",
+  "description": "Help track your spending and alert you when you've reached your limit!",
   "icons": {
     "16": "images/calc_16.png",
     "32": "images/calc_32.png",
     "48": "images/calc_48.png",
     "128": "images/calc_128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/calc_16.png",
+    "default_popup": "popup.html"
   }
 }
