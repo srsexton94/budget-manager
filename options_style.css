@@ -1,3 +1,52 @@
 body {
-  background-color: grey;
+  background-image: url('images/options_bkg.jpg') !important;
+  background-size: 100vw 100vh !important;
+  /* text-align: right; */
+}
+
+h1 {
+  color: #013220 !important;
+  font-family: sans-serif !important;
+  font-size: 3.25em !important;
+  font-weight: bold !important;
+  font-style: italic;
+  text-align: right;
+}
+
+form {
+  float: right;
+}
+
+fieldset {
+  background-color: rgba(255, 255, 255, .65);
+  border-radius: 20px;
+  height: 100px;
+  margin: 25px !important;
+  padding: 15px !important;
+  text-align: center;
+  width: 250px;
+}
+
+label {
+  color #013220;
+}
+
+p {
+  font-size: .75em;
+  font-style: italic;
+}
+
+.btn {
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
+}
+
+#limit {
+  border-radius: 7px;
+  height: 30px;
+  text-align: center;
+  width: 50%;
+}
+
+#reset-total {
+  margin-top: 2.5vh;
 }

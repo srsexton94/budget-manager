@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Budget Manager Options</h1>
-    <label>Limit
-      <input type="number" id="limit">
-    </label>
-    <input type="submit" id="save-limit" value="Save Limit" class="btn btn-primary">
-    <input type="submit" id="reset-total" value="Reset Total" class="btn btn-primary">
+    <h1>Budget Tracker Options</h1>
+    <form>
+      <fieldset>
+        <label>Limit
+          <input type="number" id="limit">
+        </label>
+        <input type="submit" id="save-limit" value="Save New Limit" class="btn btn-primary btn-sm">
+        <p>will set a new spending goal</p>
+      </fieldset>
+      <fieldset>
+        <input type="submit" id="reset-total" value="Reset Total" class="btn btn-danger">
+        <p>will set total spending back to `0`</p>
+      </fieldset>
+    </form>
   </body>
 </html>
