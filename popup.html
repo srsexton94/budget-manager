@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cheeto In Chief</title>
+    <title>Budget Manager</title>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="popup.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h2 id="greet">Hello World!</h2>
-    <input type="text" id="name">
+    <h1>Budget Manager</h1>
+    <h2>Total Spending: <span id="total">0</span></h2>
+    <h2>Limit: <span id="limit"></span></h2>
+    <h3>Enter Amount</h3>
+    <input type="number" id="amount"/>
+    <input type="submit" id="spendAmount" value="Spend">
   </body>
 </html>
