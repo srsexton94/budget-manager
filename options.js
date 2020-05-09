@@ -15,7 +15,16 @@ $(() => {
 
   // sets total back to 0
   $('#reset-total').on('click', () => {
-    chrome.storage.sync.set({ 'total': 0 })
+    chrome.storage.sync.set({ 'total': 0 }, () => {
+      let notifOptions = {
+        type: 'basic',
+        iconUrl: 'images/calc_48.png',
+        title: 'Total Reset!',
+        message: "Your total has been reset to 0!"
+      }
+      // uses `notifOptions` object to create the chrome notification
+      chrome.notifications.create('resetNotif', notifOptions)
+    })
   })
 
 })
