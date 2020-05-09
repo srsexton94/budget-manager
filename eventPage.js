@@ -6,6 +6,8 @@ const contextMenuItem = {
 
 chrome.contextMenus.create(contextMenuItem)
 
+// if the user clicks our contextMenu item and selected a number, adds to total
+// adds notification if limit is reached (refactor out later w/one in popup.js)
 chrome.contextMenus.onClicked.addListener(function (clickData) {
   if (clickData.menuItemId === "spendMoney" && clickData.selectionText) {
     if (!isNaN(clickData.selectionText)) {
@@ -30,4 +32,9 @@ chrome.contextMenus.onClicked.addListener(function (clickData) {
       })
     }
   }
+})
+
+// creates a badge so that the user's total displays over extension icon
+chrome.storage.onChanged.addListener(function (changes, storageName) {
+  chrome.browserAction.setBadgeText({ 'text': changes.total.newValue.toString() })
 })
