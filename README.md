@@ -1,6 +1,6 @@
 # Budget Tracker
 
-![]('images/screenshot.jpeg')
+![](images/screenshot.png)
 
 ## [Available in the Chrome Web Store](https://chrome.google.com/webstore/detail/kefbibfkinkpmcfdehfmdedogekjbpde/publish-accepted?authuser=0&hl=es)
 
